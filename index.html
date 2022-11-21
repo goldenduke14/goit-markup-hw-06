@@ -433,9 +433,20 @@
                   </svg>
               </div>
             </div>
-            <div class="input-line">
+            <div class="input-line input-line-textarea">
               <label for="user-text" class="modal-label">Коментар</label>
               <textarea name="user-text" id="user-text" placeholder="Введіть текст" class="modal-textarea"></textarea>
+            </div>
+            <div class="input-line check-line">
+              <input
+                id="checkbox-agree"
+                name="checkbox-agree"
+                type="checkbox"
+                class="visually-hidden">
+                <label for="checkbox-agree" class="checkbox-agree">
+                  <span>Погоджуюся з розсилкою та приймаю</span>
+                  <a href="" class="agree-text link">Умови договору</a>
+                </label>
             </div>
             <button type="submit" class="modal-button">Відправити</button>
           </form>

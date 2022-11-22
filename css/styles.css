@@ -273,6 +273,10 @@ img {
 .close-icon {
   fill: var(--third-color-text);
 }
+.close-icon:hover,
+.close-icon:focus {
+  fill: var(--accent-color);
+}
 .is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -414,7 +418,7 @@ img {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 200px;
+  min-width: 200px;
   height: 50px;
   padding: 10px 52px;
   background-color: var(--accent-color);
@@ -749,6 +753,58 @@ img {
   fill: currentColor;
 }
 
+.footer-subscr {
+  display: block;
+  margin-left: auto;
+  padding-top: 23px;
+  /* align-items: center; */
+  width: 570px;
+}
+.footer-subscr-text {
+  margin-bottom: 20px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+.footer-input {
+  display: flex;
+}
+.footer-input-mail {
+  padding: 15px 16px;
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  background-color: var(--third-bg-color);
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.footer-input-mail::placeholder {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-subscr-btn {
+  width: 200px;
+  height: 50px;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-color: transparent;
+  border-radius: 4px;
+}
 /* portfolio */
 .portfolio {
   padding-top: 94px;
